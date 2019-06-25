@@ -1,4 +1,4 @@
-# stajokulu
+# Staj Okulu
 
 Staj Okulu Demo Projeleri
 
