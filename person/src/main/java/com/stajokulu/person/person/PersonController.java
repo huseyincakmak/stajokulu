@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin
 public class PersonController {
 
 
@@ -20,7 +21,7 @@ public class PersonController {
     }
 
     @GetMapping("/person/{id}")
-    public Person getPErsonById(@PathVariable Long id) {
+    public Person getPersonById(@PathVariable Long id) {
        return personService.getPersonById(id);
     }
 
