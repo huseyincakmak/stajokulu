@@ -20,16 +20,16 @@ https://docs.google.com/presentation/d/1SJrb3mCiuiHgpsvpm4-Cq6L4aTvkjuj5fgVBBjns
 
 Related Project: person-angular
 
-Note !!!__
-NodeJs and angularCli are required to run the angular project.__
-Open console and run:__
+Note !!!<br/>
+NodeJs and angularCli are required to run the angular project.<br/>
+Open console and run:<br/>
 
-  npm install__ 
+  npm install<br/>
 
-Node_modules will be downloaded after that command.__ 
-Then you can run:__
+Node_modules will be downloaded after that command.<br/>
+Then you can run:<br/>
 
-  ng serve__ 
+  ng serve<br/>
 
 
 
