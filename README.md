@@ -34,6 +34,12 @@ Then you can run:<br/>
   
 # Lecture 4
 
+Related Project: lecture4Lab<br/>
+<br/>
+lecture4Lab folder includes 2 projects:<br/>
+Person: Spring boot rest service project.<br/>
+Person-angular: Angular8 frontend project.<br/>
+
 https://docs.google.com/presentation/d/1Ov0cVajPocMsXVFTjrI6bDYxL787XiUla7aLhyrMEv4/edit?usp=sharing 
 
 
