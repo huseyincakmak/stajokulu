@@ -41,7 +41,7 @@ lecture4Lab folder includes 2 projects:<br/>
 Person: Spring boot rest service project.<br/>
 Person-angular: Angular8 frontend project.<br/>
 Please don't forget to run <i><b>npm install</b></i> under the person-angular project. Because <b>node_modules</b> folder is empty for the reason of size. 
-You should run <i><b>npm install</b></i> before <i><b>npm run</b></i>.
+You should run <i><b>npm install</b></i> before <i><b>ng serve</b></i>.
 
 
 
