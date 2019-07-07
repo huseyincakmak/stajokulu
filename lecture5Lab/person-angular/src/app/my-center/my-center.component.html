@@ -1,0 +1,55 @@
+<div id="middle">
+
+  <form #myform="ngForm" (ngSubmit)="onClickSubmit(myform.value)">
+    <input type="text" name="id" ngModel>
+    <br/>
+    <input type="text" name="name" ngModel>
+    <br/>
+    <input type="text" name="surname" ngModel>
+    <br/>
+    <input type = "submit" value = "submit">
+  </form>
+
+
+  <br/>
+  <br/>
+  <input type = "button" [(ngModel)] = "buttonText" (click) = "gizleClick()">
+  <input type = "button" [value] = "buttonText" (click) = "gizleClick()">
+  <br/>
+
+  <ul *ngIf = "gizleGoster">
+    <li *ngFor="let p of personList">
+      {{p.name + '  ' +p.surname}}
+      <input type = "button"  value = "Sil" (click) = "kaydiSil(p.id)">
+    </li>
+  </ul>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <input type = "text" name = "id"  [value]="myText">
+
+  <br/>
+  <br/>
+  <br/>
+
+  {{myText}}
+
+  <br/>
+  <br/>
+  <br/>
+
+  <input type = "text" name = "id" [(ngModel)]="myTwoWayBindedText">
+  <br/>
+  {{myTwoWayBindedText}}
+
+
+  <br/>
+  <br/>
+  <br/>
+
+
+
+
+</div>
