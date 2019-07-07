@@ -1,0 +1,8 @@
+#sidebar-right{
+  float:left;
+  width:15%;
+  background-color: lavender;
+}
+#sidebar-right{
+  min-height: 600px
+}

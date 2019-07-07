@@ -1,0 +1,8 @@
+#middle{
+  float:left;
+  width:70%;
+  background-color: aliceblue;
+}
+#middle {
+  min-height: 600px
+}
