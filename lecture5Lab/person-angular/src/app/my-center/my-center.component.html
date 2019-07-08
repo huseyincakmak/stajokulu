@@ -1,0 +1,48 @@
+<div id="middle">
+  <hr/>
+    <span> Form, Event Binding sample</span>
+    <br/>
+    <form #myform="ngForm" (ngSubmit)="onClickSubmit(myform.value)">
+      <input type="text" name="id" [(ngModel)]="selectedPerson.id">
+      <br/>
+      <input type="text" name="name" [(ngModel)]="selectedPerson.name">
+      <br/>
+      <input type="text" name="surname" [(ngModel)]="selectedPerson.surname">
+      <br/>
+      <input type = "submit" value = "Kaydet" >
+      <button (click)="deletePerson(selectedPerson.id)" >Sil</button>
+    </form>
+    <br/>
+  <hr/>
+    <span> *ngIf and *ngFor sample</span>
+    <br/>
+    <input type = "button" [(ngModel)] = "buttonText" (click) = "gizleClick()">
+    <br/>
+    <ul *ngIf = "gizleGoster">
+      <li *ngFor="let p of personList">
+        {{p.name + '  ' +p.surname}}
+        <input type = "button"  value = "Sil" (click) = "kaydiSil(p.id)">
+      </li>
+    </ul>
+    <br/>
+  <hr/>
+    <span> Property binding sample</span>
+    <br/>
+    <input type = "text" name = "id"  [value]="myText">
+    <br/>
+    {{selectedPerson | json}}
+    {{1542.2 | number:'10.2-3'}}
+    {{0.25 | percent}}
+    {{50 | currency: 'EUR':'code'}}
+    <br/>
+    {{currentDate | date:'dd/MM/yyyy'}}
+
+    <br/>
+  <hr/>
+    <span> Two way binding sample</span>
+    <br/>
+    <input type = "text" name = "id" [(ngModel)]="myTwoWayBindedText">
+    <br/>
+    {{myTwoWayBindedText}}
+  <hr/>
+</div>

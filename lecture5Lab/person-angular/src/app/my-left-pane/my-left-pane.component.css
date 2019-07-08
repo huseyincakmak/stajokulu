@@ -1,0 +1,25 @@
+#sidebar-left{
+  float:left;
+  width:20%;
+  background-color: lavender;
+}
+#sidebar-left {
+  min-height: 600px
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: cadetblue;
+  color: white;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: blue;
+}
+button:focus {
+  background-color: dodgerblue;
+}
