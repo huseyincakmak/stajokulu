@@ -1,6 +1,6 @@
 <app-my-header></app-my-header>
-<app-my-left-pane></app-my-left-pane>
-<app-my-center></app-my-center>
+<app-my-left-pane (selectedPersonChange)="onChangeSelectedPerson($event)"></app-my-left-pane>
+<app-my-center [selectedPerson]="person"></app-my-center>
 <app-my-right-pane></app-my-right-pane>
 <app-my-footer></app-my-footer>
 

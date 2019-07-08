@@ -1,6 +1,6 @@
 <div id="middle">
   <hr/>
-    <span> Form, Event Binding sample</span>
+  <h1>Interaction via @Input and @Output</h1>
     <br/>
     <form #myform="ngForm" (ngSubmit)="onClickSubmit(myform.value)">
       <input type="text" name="id" [(ngModel)]="selectedPerson.id">
@@ -9,40 +9,45 @@
       <br/>
       <input type="text" name="surname" [(ngModel)]="selectedPerson.surname">
       <br/>
-      <input type = "submit" value = "Kaydet" >
-      <button (click)="deletePerson(selectedPerson.id)" >Sil</button>
+      <input type = "submit" value = "submit">
     </form>
     <br/>
-  <hr/>
-    <span> *ngIf and *ngFor sample</span>
-    <br/>
-    <input type = "button" [(ngModel)] = "buttonText" (click) = "gizleClick()">
-    <br/>
-    <ul *ngIf = "gizleGoster">
-      <li *ngFor="let p of personList">
-        {{p.name + '  ' +p.surname}}
-        <input type = "button"  value = "Sil" (click) = "kaydiSil(p.id)">
-      </li>
-    </ul>
-    <br/>
-  <hr/>
-    <span> Property binding sample</span>
-    <br/>
-    <input type = "text" name = "id"  [value]="myText">
-    <br/>
-    {{selectedPerson | json}}
-    {{1542.2 | number:'10.2-3'}}
-    {{0.25 | percent}}
-    {{50 | currency: 'EUR':'code'}}
-    <br/>
-    {{currentDate | date:'dd/MM/yyyy'}}
 
-    <br/>
   <hr/>
-    <span> Two way binding sample</span>
+  <h1>Interaction via service</h1>
+  <br/>
+  <form #serviceform="ngForm" (ngSubmit)="onClickSubmit(serviceform.value)">
+    <input type="text" name="id" [(ngModel)]="selectedServicePerson.id">
     <br/>
-    <input type = "text" name = "id" [(ngModel)]="myTwoWayBindedText">
+    <input type="text" name="name" [(ngModel)]="selectedServicePerson.name">
     <br/>
-    {{myTwoWayBindedText}}
+    <input type="text" name="surname" [(ngModel)]="selectedServicePerson.surname">
+    <br/>
+    <input type = "submit" value = "submit">
+  </form>
   <hr/>
+  <h3>Pipe Samples</h3>
+  {{myText | uppercase}}
+  <br/>
+  {{myText | lowercase}}
+  <br/>
+  {{myText | titlecase}}
+  <br/>
+  {{myText | slice:6:11}}
+  <br/>
+  {{selectedPerson | json}}
+  <br/>
+  {{myNumber | number:'5.2-3'}}
+  <br/>
+  {{myPercent | percent}}
+  <br/>
+  {{myMoney | currency:'EUR':'code'}}
+  <br/>
+  {{myDate | date:'dd/MM/yyyy HH:mm:ss'}}
+  <br/>
+  {{myDate | date}}
+
+
+
+
 </div>

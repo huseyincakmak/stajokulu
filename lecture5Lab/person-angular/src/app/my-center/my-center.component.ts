@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {PersonServiceService} from "../person-service.service";
 
 @Component({
@@ -8,28 +8,33 @@ import {PersonServiceService} from "../person-service.service";
 })
 export class MyCenterComponent implements OnInit {
 
-  public selectedPerson: any = {
-    id: 5,
-    name: 'deneme',
-    surname: 'deeneme'
+  @Input() selectedPerson:any;
+
+  public selectedServicePerson = {
+    id: '10',
+    name: 'Tony',
+    surname: 'Stark'
   };
 
+  public myNumber: number  = 2.32352443542525;
+
+  public myPercent: number = 0.25;
+
+  public myMoney: number = 500.5;
+
+  public myDate: Date = new Date();
 
   public personList: any;
-  public myText = 'Hello Stajokulu';
+  public myText = 'Hello Staj okulu';
   public myTwoWayBindedText = 'Hello';
   public gizleGoster = true;
   public buttonText = 'Gizle';
 
-  public currentDate : Date = new Date();
-
   constructor(private personService: PersonServiceService) {
-    personService.selectedPersonSource$.subscribe(
-      response=> {
-        console.log('person changed');
-        this.selectedPerson= response;
-      }
-    )
+    this.personService.selectedPersonSource$
+      .subscribe(response => {
+        this.selectedServicePerson = response;
+      })
   }
 
   ngOnInit() {
@@ -56,7 +61,6 @@ export class MyCenterComponent implements OnInit {
       );
   }
 
-
   gizleClick() {
     if (this.gizleGoster == true) {
       this.buttonText = 'Göster';
@@ -73,17 +77,6 @@ export class MyCenterComponent implements OnInit {
           this.personService.getAllPerson()
             .subscribe(data => {
               this.personList = data;
-            })
-        }
-      );
-  }
-
-  deletePerson(id) {
-    this.personService.deletePerson(id)
-      .subscribe(deleteResponse => {
-          this.personService.getAllPerson()
-            .subscribe(data => {
-              this.personService.changePersonList(data);
             })
         }
       );

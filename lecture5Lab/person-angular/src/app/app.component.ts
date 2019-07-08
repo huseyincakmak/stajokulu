@@ -1,5 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
-import {MyCenterComponent} from "./my-center/my-center.component";
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,16 @@ import {MyCenterComponent} from "./my-center/my-center.component";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  public person : any = {
+    id: 8,
+    name: 'Bran',
+    surname: 'Stark'
+  };
+
   title = 'Staj Okulu Page';
 
+  onChangeSelectedPerson(p) {
+    this.person = p;
+  }
 }

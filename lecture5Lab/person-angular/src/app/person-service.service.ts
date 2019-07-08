@@ -8,7 +8,6 @@ import {Subject} from "rxjs";
 export class PersonServiceService {
 
   public url = 'http://localhost:8080/person';
-
   private selectedPersonSource = new Subject<any>();
   selectedPersonSource$ = this.selectedPersonSource.asObservable();
 
@@ -36,6 +35,5 @@ export class PersonServiceService {
   changePersonList(personList) {
     this.personListSource.next(personList);
   }
-
 
 }
