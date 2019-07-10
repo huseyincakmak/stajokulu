@@ -1,0 +1,22 @@
+.person-list-css{
+  background-color: lavender;
+  min-height: 600px;
+  margin: auto
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: cadetblue;
+  color: white;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: blue;
+}
+button:focus {
+  background-color: dodgerblue;
+}

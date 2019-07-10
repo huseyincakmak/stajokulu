@@ -1,0 +1,9 @@
+<div class="login-css">
+  <form #loginForm='ngForm' (ngSubmit)="tryLogin(loginForm.value)">
+    <p>Login Please!</p>
+    <input type="text" name = 'username' ngModel/>
+    <input type="password" name = 'password' ngModel/>
+    <input type="submit" value="Login"/>
+
+  </form>
+</div>

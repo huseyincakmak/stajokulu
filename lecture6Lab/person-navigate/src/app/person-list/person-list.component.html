@@ -1,0 +1,7 @@
+<div class="person-list-css">
+  <ul>
+    <li *ngFor="let p of personList">
+      <button class="button" (click)="onSelectPerson(p)">{{p.name + '  '+p.surname}}</button>
+    </li>
+  </ul>
+</div>
