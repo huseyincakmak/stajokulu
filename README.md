@@ -47,3 +47,15 @@ You should run <i><b>npm install</b></i> before <i><b>ng serve</b></i>.
 # Lecture 5
 
 https://docs.google.com/presentation/d/1GQHpm91ahc5zmLGBJnwS2-0ihn4nN9FejXFptGSz9sM/edit?usp=sharing
+
+Related Project: lecture5Lab<br/>
+
+Component interaction is the main topic of this lab<br/>
+
+# Lecture 6
+
+https://docs.google.com/presentation/d/1V1dvNPXrN9MNcCK-pjcvyMqeoXaLo0knPMNIbjQA2DQ/edit?usp=sharing
+
+Related Project: lecture6Lab<br/>
+
+Page navigation, Router and ActivatedRoute modules are the main topics of this session.<br/>

@@ -1,0 +1,13 @@
+.detail-css{
+  height: 300px;
+  width: 200px;
+  margin: auto;
+  border: 2px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.detail-css input {
+  padding: 5px;
+  margin: 5px;
+}

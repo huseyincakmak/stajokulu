@@ -1,0 +1,12 @@
+.logincss {
+  height:110px;
+  width:190px;
+  margin:auto;
+  border:1px #CCC solid;
+  padding:10px;
+}
+
+.logincss input {
+  padding:5px;
+  margin:5px
+}

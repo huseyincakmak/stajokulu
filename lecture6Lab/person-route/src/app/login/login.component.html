@@ -1,0 +1,8 @@
+<div class="logincss">
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+
+    <input type="text" name="username" ngModel>
+    <input type="password" name="password" ngModel>
+    <input type="submit" value="login">
+  </form>
+</div>
