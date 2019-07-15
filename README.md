@@ -59,3 +59,17 @@ https://docs.google.com/presentation/d/1V1dvNPXrN9MNcCK-pjcvyMqeoXaLo0knPMNIbjQA
 Related Project: lecture6Lab<br/>
 
 Page navigation, Router and ActivatedRoute modules are the main topics of this session.<br/>
+
+# Lecture 7
+
+Related Project: lecture7Lab<br/>
+
+Bootstrap Css library integration.<br/>
+
+# Lecture 8
+
+https://docs.google.com/presentation/d/1aBjsihQpk21cmgKuK2oz6KcWXcTL3RjiOdoY6VvGBlM/edit?usp=sharing
+
+Related Project: lecture8Lab<br/>
+
+Spring Security<br/>

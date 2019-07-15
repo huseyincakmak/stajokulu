@@ -1,0 +1,21 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="login-icon py-3">
+			<img src="../../assets/img/user.png" width="100px" alt="Icon"/>
+		</div>
+		<div class="login-form">
+			<form #loginForm='ngForm' (ngSubmit)="tryLogin(loginForm.value)">
+				<h6 class="login-header">Login Please!</h6>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Username" name = 'username' ngModel/>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Password" name = 'password' ngModel/>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-outline-primary btn-block">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

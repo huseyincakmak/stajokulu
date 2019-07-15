@@ -1,0 +1,11 @@
+.person-list {
+	padding: 20px;
+}
+
+footer {
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: absolute;
+	padding: 10px;
+}

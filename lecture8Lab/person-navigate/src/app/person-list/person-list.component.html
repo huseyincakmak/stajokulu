@@ -1,0 +1,9 @@
+<div class="person-list">
+	<div class="list-group">
+		<button class="list-group-item list-group-item-action" *ngFor="let p of personList" (click)="onSelectPerson(p)">{{p.name + '  '+p.surname}} </button>
+	</div>
+</div>
+
+<footer class="bg-secondary">
+	<p>Bütün hakları saklıdır.</p>
+</footer>
