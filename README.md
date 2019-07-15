@@ -73,3 +73,7 @@ https://docs.google.com/presentation/d/1aBjsihQpk21cmgKuK2oz6KcWXcTL3RjiOdoY6VvG
 Related Project: lecture8Lab<br/>
 
 Spring Security<br/>
+
+You can watch following video on youtube<br/>
+https://www.youtube.com/watch?v=IyzC1kkHZ-I
+
