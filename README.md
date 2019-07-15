@@ -1,6 +1,6 @@
 # Staj Okulu
 
-Staj Okulu Demo Projeleri
+Staj Okulu Demo Projects
 
 # Lecture 1
 
