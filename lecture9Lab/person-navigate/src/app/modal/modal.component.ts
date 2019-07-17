@@ -21,13 +21,17 @@ export class ModalComponent implements OnInit {
   }
 
   public hide(callback): void {
-    this.visibleAnimate = false;
+
     setTimeout(() => {
-      this.visible = false ;
+
         if(callback){
-          setTimeout(() => {callback() }, 100);
+          setTimeout(() => {
+            this.visibleAnimate = false;
+            this.visible = false ;
+            callback();
+          }, 1000);
         }
-      }, 300);
+      }, 3000);
   }
 
   public onContainerClicked(event: MouseEvent): void {

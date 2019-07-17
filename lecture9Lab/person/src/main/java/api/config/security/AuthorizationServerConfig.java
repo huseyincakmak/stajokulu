@@ -70,7 +70,7 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
                 .tokenStore(tokenStore)
                 .authenticationManager(authenticationManager)
                 .userDetailsService(customUserDetailService)
-                .allowedTokenEndpointRequestMethods(HttpMethod.GET, HttpMethod.POST);
+                .allowedTokenEndpointRequestMethods(HttpMethod.GET, HttpMethod.POST, HttpMethod.DELETE);
     }
 
     @Override

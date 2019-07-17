@@ -32,6 +32,7 @@ import {TokenInterceptorService} from './token-interceptor.service';
     useClass: TokenInterceptorService,
     multi: true
   }],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

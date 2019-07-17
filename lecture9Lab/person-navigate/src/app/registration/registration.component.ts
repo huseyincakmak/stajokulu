@@ -38,4 +38,5 @@ export class RegistrationComponent implements OnInit {
   closeModal(modal) {
     modal.hide(this.registrationCallback.bind(this));
   }
+
 }

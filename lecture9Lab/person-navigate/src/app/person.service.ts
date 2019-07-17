@@ -12,16 +12,6 @@ export class PersonService {
 
   getPersonList() {
 
-    /*const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/json',
-        'Authorization': localStorage.getItem('token_type') + ' ' + localStorage.getItem('access_token')
-      })
-    };
-
-    return this.http.get(this.url, httpOptions);
-    */
-
     return this.http.get(this.url);
   }
 
