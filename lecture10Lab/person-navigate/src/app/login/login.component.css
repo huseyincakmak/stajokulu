@@ -1,0 +1,33 @@
+
+.container {
+	width: 400px;
+	padding: 5px;
+	margin-top: 70px;
+	position: relative;
+	-webkit-box-shadow: -9px 9px 20px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -9px 9px 20px -1px rgba(0,0,0,0.75);
+	box-shadow: -9px 9px 20px -1px rgba(0,0,0,0.75);
+	background: linear-gradient(#9ABDB5, #37B9E9);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.login-form {
+	padding: 10px;
+	margin: 0 auto;
+	background-color: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.login-header {
+	background-color: antiquewhite;
+	padding: 5px;
+	text-align: center;
+}
+
+.login-icon {
+	text-align: center;
+}

@@ -1,0 +1,22 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="person-detail">
+			<form #detailForm="ngForm">
+				<div class="form-group">
+					<input class="form-control" placeholder="Id" type="text" [(ngModel)]="person.id" name="id">
+				</div>
+				<div class="form-group">
+					<input class="form-control" placeholder="Name" type="text" [(ngModel)]="person.name" name="name">
+				</div>
+				<div class="form-group">
+					<input class="form-control" placeholder="Surname" type="text" [(ngModel)]="person.surname"
+					       name="surname">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-outline-info" type="button" (click)="updatePerson()">Update</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+

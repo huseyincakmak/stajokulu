@@ -1,0 +1,51 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="login-icon py-3">
+			<img src="../../assets/img/sign-up.png" width="100px" alt="Icon"/>
+		</div>
+		<div class="login-form">
+			<form #sginupForm='ngForm' (ngSubmit)="signUp(sginupForm.value, modal)">
+				<h6 class="login-header">Sign Up</h6>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Username" name = 'username' ngModel/>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Password" name = 'password' ngModel/>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Rewrite Password " name = 'password2' ngModel/>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Name" name = 'name' ngModel/>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Surname" name = 'surname' ngModel/>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Email" name = 'email' ngModel/>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-outline-primary btn-block">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<app-modal #modal>
+
+	<div class="app-modal-header">
+		 Wellcome to Staj okulu
+	</div>
+
+	<div class="app-modal-body text-center">
+		Registration completed, click "Login Page" button to login the system
+	</div>
+
+	<div class="app-modal-footer">
+
+		<button type="button" class="btn btn-info" (click)="closeModal(modal)">Login Page</button>
+	</div>
+
+</app-modal>
